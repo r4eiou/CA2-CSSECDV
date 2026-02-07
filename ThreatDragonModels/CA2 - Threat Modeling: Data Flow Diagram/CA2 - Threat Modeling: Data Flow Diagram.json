@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "dcbcfba9-6c68-477c-b418-50cb12592ec9",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Browser\nClient",
@@ -155,6 +155,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -238,7 +239,6 @@
               ]
             },
             "id": "294a74d8-0273-4a7f-85ee-9b11dd1ee307",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web\nApplication\n",
@@ -301,8 +301,8 @@
             },
             "vertices": [
               {
-                "x": 180,
-                "y": 170
+                "x": 190,
+                "y": 160
               }
             ]
           },
@@ -353,8 +353,8 @@
             },
             "vertices": [
               {
-                "x": 250,
-                "y": 80
+                "x": 270,
+                "y": 120
               }
             ]
           },
@@ -392,7 +392,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Auth\nVerifi"
+              "Authentication\nRequest"
             ],
             "id": "c9f05f4b-71d6-4996-a143-b9ed29383d13",
             "source": {
@@ -683,6 +683,122 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Feedback\nComments",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Feedback\nComments"
+            ],
+            "id": "99db9b09-2163-4846-8d32-4beb244b57c6",
+            "source": {
+              "x": 150,
+              "y": 60
+            },
+            "target": {
+              "cell": "294a74d8-0273-4a7f-85ee-9b11dd1ee307",
+              "port": "5f4efc79-3136-41c0-9092-3520a2546576"
+            },
+            "vertices": [
+              {
+                "x": 270,
+                "y": 40
+              },
+              {
+                "x": 310,
+                "y": 60
+              },
+              {
+                "x": 330,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Feedback Comments\nStatus",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Feedback Comments\nStatus"
+            ],
+            "id": "18f64ab1-dfcd-4af1-aeeb-4aa70a2c662d",
+            "source": {
+              "cell": "294a74d8-0273-4a7f-85ee-9b11dd1ee307",
+              "port": "6383eaf2-56c3-4c40-b811-7cfa5035499f"
+            },
+            "target": {
+              "cell": "dcbcfba9-6c68-477c-b418-50cb12592ec9",
+              "port": "62b1d072-de49-4162-8182-8b32c10ed1c4"
+            },
+            "vertices": [
+              {
+                "x": 130,
+                "y": 205
+              },
+              {
+                "x": 85,
+                "y": 160
+              }
+            ]
+          },
+          {
             "position": {
               "x": 60,
               "y": 350
@@ -706,6 +822,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -789,7 +906,6 @@
               ]
             },
             "id": "f5ab093a-1bda-4ccf-b219-6dfccd48603b",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "SQL Database\n",
@@ -827,6 +943,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -910,7 +1027,6 @@
               ]
             },
             "id": "51630b44-e10d-4f65-b56c-bf9db90d1403",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "LDAP\n",
@@ -947,6 +1063,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1030,7 +1147,6 @@
               ]
             },
             "id": "232fdf3e-60cd-4580-b78a-9485912acddf",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "Authorization\nProvider",
