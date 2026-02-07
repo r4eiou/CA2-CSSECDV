@@ -706,7 +706,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Verification\nRequest",
+              "name": "Authorization\nRequest",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -720,7 +720,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Verification\nRequest"
+              "Authorization\nRequest"
             ],
             "id": "6cdc26ee-5d70-4118-ad73-577f1bf7942c",
             "source": {
@@ -758,7 +758,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Verification\nResponse",
+              "name": "Authorization\nResponse",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -772,7 +772,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Verification\nResponse"
+              "Authorization\nResponse"
             ],
             "id": "df98f8f3-b939-4e51-bf5c-0182fd9726c3",
             "source": {
@@ -1058,6 +1058,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1141,7 +1142,6 @@
               ]
             },
             "id": "3e427558-dd90-41ba-b36c-f8b0f9ff656d",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "LDAP",
@@ -1185,16 +1185,16 @@
             ],
             "id": "5ed58c6b-ac80-4a9a-90c6-b3723160ab67",
             "source": {
-              "x": 260,
-              "y": 330
+              "x": 250,
+              "y": 390
             },
             "target": {
-              "x": 540,
-              "y": 100
+              "x": 580,
+              "y": 60
             },
             "vertices": [
               {
-                "x": 420,
+                "x": 440,
                 "y": 190
               }
             ]
